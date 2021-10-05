@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Ellipse from './Ellipse.png';
+import FacebookLogin from 'react-facebook-login';
 
 const theme = createTheme();
 
@@ -23,6 +24,13 @@ function Copyright(props) {
             <Link color="inherit"> {'Privacy Policy'}</Link>
         </Typography>
     );
+}
+
+const responseFacebook = (response) => {
+    console.log('login result', response);
+}
+const componentClicked = (data) => {
+    console.warn(data);
 }
 
 export default function Login() {
@@ -94,6 +102,12 @@ export default function Login() {
                         <Link href="#" variant="body2" color="inherit" style={{ float: 'center' }}>
                             {"Do not have an account? Sign Up"}
                         </Link>
+                        <FacebookLogin
+                            appId="4270288336400547"
+                            autoLoad={true}
+                            fields="name,email,picture"
+                            onClick={componentClicked}
+                            callback={responseFacebook} />
                     </Box>
                 </Box>
                 <Copyright sx={{ mt: 8, mb: 4 }} />

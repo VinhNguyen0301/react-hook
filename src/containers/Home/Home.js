@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Frame from './Frame.png';
-import Login from "./Login";
+import Login from "../Login/Login";
 
 export default function Home() {
     return (

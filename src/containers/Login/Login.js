@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Typography from '@mui/material/Typography';
 import "./Login.css";
 import TextField from '@mui/material/TextField';
@@ -13,6 +13,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Ellipse from './Ellipse.png';
 import FacebookLogin from 'react-facebook-login';
+import { accountService } from '../services';
 
 const theme = createTheme();
 
@@ -33,20 +34,21 @@ const componentClicked = (data) => {
     console.warn(data);
 }
 
-export default function Login() {
+export default function Login({ history }) {
     // const [email, setEmail] = useState("");
     // const [password, setPassword] = useState("");
 
-    // function validateForm() {
-    //     return email.length > 0 && password.length > 0;
-    // }
+    useEffect(() => {
+        // redirect to home if already logged in
+        if (accountService.accountValue) {
+            history.push('/');
+        }
+    }, [history]);
 
-    // function handleSubmit(event) {
-    //     event.preventDefault();
-    // }
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
         const data = new FormData(event.currentTarget);
         // eslint-disable-next-line no-console
         console.log({
@@ -106,7 +108,7 @@ export default function Login() {
                             appId="4270288336400547"
                             autoLoad={true}
                             fields="name,email,picture"
-                            onClick={componentClicked}
+                            onClick={accountService.login}
                             callback={responseFacebook} />
                     </Box>
                 </Box>

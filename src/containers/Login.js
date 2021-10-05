@@ -13,6 +13,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Ellipse from './Ellipse.png';
 import FacebookLogin from 'react-facebook-login';
+import { LinkContainer } from "react-router-bootstrap";
 
 const theme = createTheme();
 
@@ -102,12 +103,14 @@ export default function Login() {
                         <Link href="#" variant="body2" color="inherit" style={{ float: 'center' }}>
                             {"Do not have an account? Sign Up"}
                         </Link>
-                        <FacebookLogin
-                            appId="4270288336400547"
-                            autoLoad={true}
-                            fields="name,email,picture"
-                            onClick={componentClicked}
-                            callback={responseFacebook} />
+                        <LinkContainer to="/dashboard">
+                            <FacebookLogin
+                                appId="4270288336400547"
+                                autoLoad={true}
+                                fields="name,email,picture"
+                                onClick={componentClicked}
+                                callback={responseFacebook} />
+                        </LinkContainer>
                     </Box>
                 </Box>
                 <Copyright sx={{ mt: 8, mb: 4 }} />

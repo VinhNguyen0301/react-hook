@@ -206,3 +206,29 @@ color: #4F4F4F;
     vertical-align: middle;
     margin-top: 99px;
 }
+
+.view-all-btn2 {
+     width: 702px;
+    height: 52px;
+    background: #DCDEE0;
+/* Light */
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 52px;
+/* identical to box height, or 125% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+/* Blue 3 */
+
+    color: #0D41BF;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 28px;
+}

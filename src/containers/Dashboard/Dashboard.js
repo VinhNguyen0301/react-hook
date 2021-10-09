@@ -7,6 +7,9 @@ import clock from './image/clock.png';
 import expired from './image/expired.png';
 import complete from './image/complete.png';
 import fileText from './image/file-text.png';
+import draft from './image/draft.png';
+import pending from './image/pending.png';
+import completed from './image/completed.png';
 
 function Box(props) {
     return (
@@ -54,28 +57,67 @@ export default function Dashboard() {
                     <div className="title" >Assigned to Me (2)</div>
                     <div className="detail-title">Document(s) that required  your attention.</div>
                     <table className="data-table">
-                        <tr>
-                            <th className="th-tag">Name</th>
-                            <th className="th-tag">Action</th>
-                        </tr>
-                        <tr>
-                            <td ><span><img src={fileText} className="fileText" alt="fileText" /> </span>Document 1</td>
-                            <td>
-                                <Button variant="contained" >Sign Document</Button>
-                            </td>
-                        </tr>
-                        <hr />
-                        <tr>
-                            <td><span><img src={fileText} className="fileText" alt="fileText" /></span>Document 2</td>
-                            <td>
-                                <Button variant="contained" >Sign Document</Button>
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th className="th-tag">Name</th>
+                                <th className="th-tag">Action</th>
+                            </tr>
+                            <tr>
+                                <td ><span><img src={fileText} className="fileText" alt="fileText" /> </span>Document 1</td>
+                                <td>
+                                    <Button variant="contained" >Sign Document</Button>
+                                </td>
+                            </tr>
+                            <hr />
+                            <tr>
+                                <td><span><img src={fileText} className="fileText" alt="fileText" /></span>Document 2</td>
+                                <td>
+                                    <Button variant="contained" >Sign Document</Button>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                     <div className="view-all-btn">View All</div>
                 </div>
                 <div className="flex-box flex-box-2">
-                    <div>bbb</div>
+                    <div className="title" >Recent</div>
+                    <div className="detail-title">Review your recent Document(s)</div>
+                    <table className="data-table">
+                        <tbody>
+                            <tr>
+                                <th className="th-tag">Name</th>
+                                <th className="th-tag">Last Modified</th>
+                                <th className="th-tag">Status</th>
+                            </tr>
+                            <tr>
+                                <td ><span><img src={fileText} className="fileText" alt="fileText" /> </span>LOE_September_2020</td>
+                                <td > Just now</td>
+                                <td > <img src={draft} className="draft" alt="draft" /></td>
+                                <td>
+                                    <Button variant="contained" >View Document</Button>
+                                </td>
+                            </tr>
+                            <hr />
+                            <tr>
+                                <td><span><img src={fileText} className="fileText" alt="fileText" /></span>General Report</td>
+                                <td > 1 hour ago</td>
+                                <td > <img src={pending} className="pending" alt="pending" /></td>
+                                <td>
+                                    <Button variant="contained" >View Document</Button>
+                                </td>
+                            </tr>
+                            <hr />
+                            <tr>
+                                <td><span><img src={fileText} className="fileText" alt="fileText" /></span>Year end Report</td>
+                                <td > 22 July 2020</td>
+                                <td > <img src={completed} className="completed" alt="completed" /></td>
+                                <td>
+                                    <Button variant="contained" >View Document</Button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div className="view-all-btn2">View All</div>
                 </div>
             </div>
         </div>

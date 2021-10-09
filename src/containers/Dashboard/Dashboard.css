@@ -29,3 +29,71 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
 
 }
+.main-box{
+    width: 1152px;
+    display: flex;
+
+}
+
+.box-item{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* position: absolute; */
+    width: 272px;
+    height: 96px;
+    margin-top: 32px;
+    display: inline-block;
+    flex:1 1 auto;
+    
+    
+}
+.main-box .box-item:not(:first-child){
+    margin-left: 21px
+}
+
+.item-document {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    width: 129px;
+    margin-left: 27px;
+    margin-right: 53px;
+}
+
+.item-document2 {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+margin-left: 27px;
+margin-top: 12px;
+/* identical to box height, or 117% */
+
+letter-spacing: -0.02em;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+}
+.item2 {
+    margin-top: 16px;
+}
+.display-item {
+  display: block;
+  text-decoration: none;
+}
+
+.display-item-box {
+ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}

@@ -6,6 +6,7 @@ import bag from './image/bag.png';
 import clock from './image/clock.png';
 import expired from './image/expired.png';
 import complete from './image/complete.png';
+import fileText from './image/file-text.png';
 
 function Box(props) {
     return (
@@ -47,6 +48,35 @@ export default function Dashboard() {
                 <Box color="#FFF2CC" name="PENDING" iconName="clock"></Box>
                 <Box color="#F0C7BA" name="EXPIRED" iconName="expired"></Box>
                 <Box color="#DAEAEA" name="COMPLETE" iconName="complete"></Box>
+            </div>
+            <div className="flex-container2">
+                <div className="flex-box flex-box-1">
+                    <div className="title" >Assigned to Me (2)</div>
+                    <div className="detail-title">Document(s) that required  your attention.</div>
+                    <table className="data-table">
+                        <tr>
+                            <th className="th-tag">Name</th>
+                            <th className="th-tag">Action</th>
+                        </tr>
+                        <tr>
+                            <td ><span><img src={fileText} className="fileText" alt="fileText" /> </span>Document 1</td>
+                            <td>
+                                <Button variant="contained" >Sign Document</Button>
+                            </td>
+                        </tr>
+                        <hr />
+                        <tr>
+                            <td><span><img src={fileText} className="fileText" alt="fileText" /></span>Document 2</td>
+                            <td>
+                                <Button variant="contained" >Sign Document</Button>
+                            </td>
+                        </tr>
+                    </table>
+                    <div className="view-all-btn">View All</div>
+                </div>
+                <div className="flex-box flex-box-2">
+                    <div>bbb</div>
+                </div>
             </div>
         </div>
 

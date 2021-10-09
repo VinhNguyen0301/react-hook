@@ -1,0 +1,24 @@
+.header {
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+ 
+}
+
+.ul-header {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.li-item {
+  float: left;
+}
+
+.li-item p {
+    display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}

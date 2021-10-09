@@ -10,6 +10,8 @@ import fileText from './image/file-text.png';
 import draft from './image/draft.png';
 import pending from './image/pending.png';
 import completed from './image/completed.png';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 function Box(props) {
     return (
@@ -33,6 +35,7 @@ function Box(props) {
 export default function Dashboard() {
     return (
         <div>
+            <Header />
             <div className="Dashboard">
                 <div className="flex-container">
                     <div className="item item1">
@@ -120,6 +123,7 @@ export default function Dashboard() {
                     <div className="view-all-btn2">View All</div>
                 </div>
             </div>
+            <Footer />
         </div>
 
 

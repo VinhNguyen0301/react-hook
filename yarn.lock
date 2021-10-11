@@ -9556,6 +9556,11 @@ react@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
+reactjs-popup@^2.0.5:
+  version "2.0.5"
+  resolved "https://artifactory.pruconnect.net/artifactory/api/npm/npm-pca-pulseforops/reactjs-popup/-/reactjs-popup-2.0.5.tgz#588a74966bb126699429d739948e3448d7771eac"
+  integrity sha1-WIp0lmuxJmmUKdc5lI40SNd3Hqw=
+
 read-pkg-up@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-2.0.0.tgz#6b72a8048984e0c41e79510fd5e9fa99b3b549be"

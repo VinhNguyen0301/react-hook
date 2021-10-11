@@ -208,3 +208,79 @@ order: 0;
 flex-grow: 0;
 margin: 0px 10px;
 }
+.drag-drop-area {
+    position: absolute;
+width: 640px;
+height: 360px;
+left: 80px;
+top: 200px;
+
+/* Gray 6 */
+
+background: #F2F2F2;
+border-radius: 4px;
+}
+.drag-drop-title {
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: -0.02em;
+
+/* Gray 1 */
+
+color: #3B3B3B;
+position: absolute;
+width: 269px;
+height: 24px;
+
+
+}
+.drag-drop-choose {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+
+position: absolute;
+width: 115px;
+height: 40px;
+
+
+/* Blue 0 */
+
+background: #22354C;
+border-radius: 3px;
+margin-left: 75px;
+    margin-top: 40px;
+}
+.drag-drop-choose-font {
+   position: static;
+width: 99px;
+height: 32px;
+left: 8px;
+top: 4px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}

@@ -1,0 +1,98 @@
+.headers {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+/* identical to box height, or 114% */
+
+letter-spacing: -2.5px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Gray 1 */
+
+color: #3B3B3B;
+    margin: 40px 0px 0px 80px;
+}
+.titles {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: -0.02em;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+margin: 12px 0px 0px 80px;
+}
+.textfield {
+
+    margin: 24px 0px 0px 80px;
+}
+.textfield-size {
+    width: 400px;
+    height: 56px;
+  
+}
+.doc-header {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+margin: 16px 0px 0px 80px;
+}
+.doc-title {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 133% */
+
+letter-spacing: -0.01em;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+margin: 4px 0px 0px 80px;
+}
+.btn-add {
+    width: 160px;
+    height: 160px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    /* Light */
+
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+    border-radius: 3px;
+    margin: 19px 0px 0px 80px;
+}
+.btn-back {
+    width: 91px;
+    height: 48px;
+   
+}
+.btn-continue {
+   width: 161px; 
+   height: 48px;
+
+}
+.plus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

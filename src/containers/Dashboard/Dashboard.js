@@ -12,6 +12,7 @@ import pending from './image/pending.png';
 import completed from './image/completed.png';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import { LinkContainer } from "react-router-bootstrap";
 
 function Box(props) {
     return (
@@ -35,13 +36,15 @@ function Box(props) {
 export default function Dashboard() {
     return (
         <div>
-            <Header />
+            {/* <Header /> */}
             <div className="Dashboard">
                 <div className="flex-container">
                     <div className="item item1">
                         <p className="username-item" >Hi, Ernie</p>
                         <p style={{ margin: "10px 0px 0px 35px" }}>Let's begin a new document, shall we?</p>
-                        <Button variant="contained" style={{ margin: "35px" }}>Create a Document</Button>
+                        <LinkContainer to="/create-new-project" style={{ margin: "30px" }}>
+                            <Button variant="contained" >Create a Document</Button>
+                        </LinkContainer>
                         <Button variant="outlined" className="btn-item">Use Template</Button>
                     </div>
                     <div className="item item2">

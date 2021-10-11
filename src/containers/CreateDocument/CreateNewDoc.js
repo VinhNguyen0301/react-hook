@@ -42,12 +42,11 @@ function CreateNewDoc(props) {
             </div>
             <Modal
                 open={open}
-                onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
                 <Box className="box-style">
-                    <div style={{ margin: '24px 0px 0px 80px' }} className="modal-headers" >Add Document(s) to Project <span style={{ marginLeft: '249px' }}><img src={cancel} className="cancel" alt="cancel" style={{ width: '16px', height: '16px' }}></img></span></div>
+                    <div style={{ margin: '24px 0px 0px 80px' }} className="modal-headers" >Add Document(s) to Project <span style={{ marginLeft: '249px' }} onClick={handleClose}><img src={cancel} className="cancel" alt="cancel" style={{ width: '16px', height: '16px' }}></img></span></div>
                     <div style={{ margin: '0px 80px 0px 80px' }}>
 
                         <div className="modal-titles">We will create digital fingerprint(hash) of the document to register it to the blockchain.At any point, your document will never be uploaded to Dedoco servers.</div>

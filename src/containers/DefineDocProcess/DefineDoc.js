@@ -3,8 +3,15 @@ import './DefineDoc.css';
 import group from './group178.png';
 import trash from './trash-2.png';
 import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import { LinkContainer } from "react-router-bootstrap";
+import cancel from '../CreateDocument/x.png';
 
 function DocumentItem(props) {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
         <div className="doc-item">
             <div className="document doc-item-1">
@@ -19,10 +26,18 @@ function DocumentItem(props) {
             </div>
             <div className="document doc-item-2">
                 <div className="doc-item-2-label">
-                    <div className="doc-item-2-btn">ADD PROCESS <span style={{ marginLeft: '37px' }}><img src={trash} className="trash" alt="trash" width="24px" height="24px" /></span></div>
+                    <div className="doc-item-2-btn" onClick={handleOpen}>ADD PROCESS <span style={{ marginLeft: '37px' }}><img src={trash} className="trash" alt="trash" width="24px" height="24px" /></span></div>
                 </div>
-
             </div>
+            <Modal
+                open={open}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box className="box-style">
+                    <div>aa</div>
+                </Box>
+            </Modal>
         </div>
     )
 }

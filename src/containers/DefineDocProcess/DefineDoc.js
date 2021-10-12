@@ -13,6 +13,12 @@ import AddProcess from './AddProcess/AddProcess';
 import Header from '../Header simple/header';
 import NavProcess from '../NavProcess/NavProcess';
 
+function DocumentRecipient(props) {
+    return (
+        <div>bbb</div>
+    )
+}
+
 function DocumentItem(props) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -42,7 +48,20 @@ function DocumentItem(props) {
             >
                 <Box className="box-ui">
                     <div style={{ display: 'flex' }}>
-                        <div className="box-ui1" >aa</div>
+                        <div className="box-ui1" >
+                            <div>1. Add Process</div>
+                            <div> Document A.pdf</div>
+                            <div>Choose sharing option</div>
+                            <div></div>
+                            <div>
+                                Document Recipient(s)
+                            </div>
+                            <DocumentRecipient />
+                            <div>+ Add Recipient</div>
+                            <div>
+                                2 btn
+                            </div>
+                        </div>
                         <div className="box-ui2" >
                             <div className="help">Help<img src={help} className="help" alt="help" style={{ width: '20px', height: '20px' }}></img><span style={{ marginLeft: '0px' }} onClick={handleClose}><img src={cancel} className="cancel" alt="cancel" style={{ width: '32px', height: '32px' }}></img></span></div>
 

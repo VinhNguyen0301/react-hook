@@ -3,10 +3,13 @@ import './DefineDoc.css';
 import group from './group178.png';
 import trash from './trash-2.png';
 import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import { LinkContainer } from "react-router-bootstrap";
 import cancel from '../CreateDocument/x.png';
+import help from './help-circle.png';
+import Modal from '@mui/material/Modal';
+import Footer from '../Footer/Footer';
+import AddProcess from './AddProcess/AddProcess'
 
 function DocumentItem(props) {
     const [open, setOpen] = React.useState(false);
@@ -29,31 +32,45 @@ function DocumentItem(props) {
                     <div className="doc-item-2-btn" onClick={handleOpen}>ADD PROCESS <span style={{ marginLeft: '37px' }}><img src={trash} className="trash" alt="trash" width="24px" height="24px" /></span></div>
                 </div>
             </div>
+
             <Modal
                 open={open}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box className="box-style">
-                    <div>aa</div>
+                <Box className="box-ui">
+                    <div style={{ display: 'flex' }}>
+                        <div className="box-ui1" >aa</div>
+                        <div className="box-ui2" >
+                            <div className="help">Help<img src={help} className="help" alt="help" style={{ width: '20px', height: '20px' }}></img><span style={{ marginLeft: '0px' }} onClick={handleClose}><img src={cancel} className="cancel" alt="cancel" style={{ width: '32px', height: '32px' }}></img></span></div>
+
+                        </div>
+                    </div>
+
                 </Box>
             </Modal>
+
         </div>
     )
 }
 
 function DefineDoc(props) {
     return (
-        <div style={{ margin: '40px 0px 0px 120px' }}>
-            <div className="define-process-header">Define Document Process</div>
-            <div className="define-process-title">
-                Configure the signature placement(s) and sequence of document(s) involved in this project.
+        <div>
+            <div style={{ margin: '40px 0px 0px 120px' }}>
+                <div className="define-process-header">Define Document Process</div>
+                <div className="define-process-title">
+                    Configure the signature placement(s) and sequence of document(s) involved in this project.
             </div>
-            <DocumentItem name="Document A.pdf" />
-            <DocumentItem name="Document B.pdf" />
-            <div style={{ margin: '20px 270px 0px', float: 'right' }}>
-                <Button variant="outlined" className="btn-back">Back</Button>
-                <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                <DocumentItem name="Document A.pdf" />
+                <DocumentItem name="Document B.pdf" />
+                <div style={{ margin: '20px 270px 0px', float: 'right' }}>
+                    <Button variant="outlined" className="btn-back">Back</Button>
+                    <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                </div>
+            </div>
+            <div style={{ marginTop: '175px' }}>
+                <Footer />
             </div>
         </div>
     );

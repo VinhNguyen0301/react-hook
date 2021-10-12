@@ -197,3 +197,48 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* CSS box-ui */
+.box-ui {
+    width: 1040px;
+    height: 704px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    /* left: 320px;
+    top: 122px;
+    transform: translate(-50%, -50%); */
+    left: 200px;
+    top: 98px;
+
+}
+.box-ui1{
+    width: 680px;
+}
+.box-ui2{
+    width: 360px;
+    height: 704px;  
+    background: #F2F2F2;
+}
+.help {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+letter-spacing: -0.01em;
+text-decoration-line: underline;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+
+
+/* Inside Auto Layout */
+margin-top: 32px;
+    float: right;
+    margin-right: 20px;
+
+}

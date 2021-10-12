@@ -1,5 +1,5 @@
 .footer {
-    width: 1440px;
+    width: 1200px;
     text-align: center;
 }
 .footer ul li {
@@ -16,3 +16,21 @@
       display: inline;
       border: 1px;
     }
+.margin-span {
+  margin: 0px 24px 0px 24px;
+}
+.font-footer {
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 133% */
+
+letter-spacing: -0.01em;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+
+}

@@ -6,20 +6,20 @@ function Footer() {
         <div className="footer">
             <hr></hr>
             <ul className="trip-stats-list">
-                <li>
-                    <p>Privacy Policy <span>|</span> </p>
+                <li >
+                    <p className="font-footer" style={{ marginLeft: '384px' }}>Privacy Policy<span className="margin-span">|</span> </p>
 
                 </li>
                 <li>
-                    <p>Terms Of Use <span>|</span></p>
+                    <p className="font-footer">Terms Of Use <span className="margin-span">|</span></p>
 
                 </li>
                 <li>
-                    <p>Contact Us <span>|</span></p>
+                    <p className="font-footer">Contact Us <span className="margin-span">|</span></p>
 
                 </li>
                 <li>
-                    <p>Copyright © 2020 Dedoco, Inc. All rights revered</p>
+                    <p className="font-footer">Copyright © 2020 Dedoco, Inc. All rights revered</p>
 
                 </li>
             </ul>

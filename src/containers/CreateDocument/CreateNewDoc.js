@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import { LinkContainer } from "react-router-bootstrap";
-
+import Footer from '../Footer/Footer'
 const style = {
     position: 'absolute',
     top: '50%',
@@ -75,6 +75,9 @@ function CreateNewDoc(props) {
             <div style={{ margin: '98px 0px 0px 80px' }}>
                 <Button variant="outlined" className="btn-back">Back</Button>
                 <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+            </div>
+            <div style={{ marginTop: '184px' }}>
+                <Footer />
             </div>
 
         </div>

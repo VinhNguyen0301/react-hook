@@ -7,6 +7,7 @@ import cancel from './x.png';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import { LinkContainer } from "react-router-bootstrap";
 
 const style = {
     position: 'absolute',
@@ -64,7 +65,10 @@ function CreateNewDoc(props) {
                     </div>
                     <div style={{ margin: '463px 86px 24px 446px' }}>
                         <Button variant="outlined" className="btn-back">Back</Button>
-                        <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                        <LinkContainer to="/define-process-doc" style={{ margin: "0px" }}>
+                            <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                        </LinkContainer>
+
                     </div>
                 </Box>
             </Modal>

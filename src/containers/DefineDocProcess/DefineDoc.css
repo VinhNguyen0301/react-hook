@@ -1,0 +1,56 @@
+.doc-item {
+    width: 720px;
+    height: 160px;
+    margin-top: 40px;
+
+/* Gray 6 */
+
+background: #F2F2F2;
+/* Gray 4 */
+
+border: 1px solid #BDBDBD;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.define-process-header {
+width: 485px;
+height: 48px;
+
+
+/* Heading 0 */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+/* identical to box height, or 114% */
+
+letter-spacing: -2.5px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Gray 1 */
+
+color: #3B3B3B;
+
+}
+.define-process-title {
+width: 720px;
+height: 48px;
+
+/* Subtitle 1 */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+
+letter-spacing: -0.02em;
+
+/* Gray 2 */
+
+color: #4F4F4F;
+margin-top: 12px;
+}

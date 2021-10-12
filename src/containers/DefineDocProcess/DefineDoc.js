@@ -9,7 +9,9 @@ import cancel from '../CreateDocument/x.png';
 import help from './help-circle.png';
 import Modal from '@mui/material/Modal';
 import Footer from '../Footer/Footer';
-import AddProcess from './AddProcess/AddProcess'
+import AddProcess from './AddProcess/AddProcess';
+import Header from '../Header simple/header';
+import NavProcess from '../NavProcess/NavProcess';
 
 function DocumentItem(props) {
     const [open, setOpen] = React.useState(false);
@@ -57,21 +59,30 @@ function DocumentItem(props) {
 function DefineDoc(props) {
     return (
         <div>
-            <div style={{ margin: '40px 0px 0px 120px' }}>
-                <div className="define-process-header">Define Document Process</div>
-                <div className="define-process-title">
-                    Configure the signature placement(s) and sequence of document(s) involved in this project.
+            <Header />
+            <div style={{ display: 'flex', width: '1440px' }}>
+                <div style={{ width: '240px' }}>
+                    <NavProcess />
+                </div>
+                <div style={{ width: '1200px', height: '820px' }}>
+                    <div style={{ margin: '40px 0px 0px 120px' }}>
+                        <div className="define-process-header">Define Document Process</div>
+                        <div className="define-process-title">
+                            Configure the signature placement(s) and sequence of document(s) involved in this project.
             </div>
-                <DocumentItem name="Document A.pdf" />
-                <DocumentItem name="Document B.pdf" />
-                <div style={{ margin: '20px 270px 0px', float: 'right' }}>
-                    <Button variant="outlined" className="btn-back">Back</Button>
-                    <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                        <DocumentItem name="Document A.pdf" />
+                        <DocumentItem name="Document B.pdf" />
+                        <div style={{ margin: '20px 270px 0px', float: 'right' }}>
+                            <Button variant="outlined" className="btn-back">Back</Button>
+                            <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                        </div>
+                    </div>
+                    <div style={{ marginTop: '225px' }}>
+                        <Footer />
+                    </div>
                 </div>
             </div>
-            <div style={{ marginTop: '175px' }}>
-                <Footer />
-            </div>
+
         </div>
     );
 }

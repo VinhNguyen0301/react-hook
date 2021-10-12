@@ -8,7 +8,7 @@ import { LinkContainer } from "react-router-bootstrap";
 function Header(props) {
     return (
         <div className="header">
-            {/* <div style={{ display: "inline-block" }}>
+            <div style={{ display: "inline-block", margin: '30px 0px 0px 36px' }}>
                 <img src={logoDe} className="logoDe" alt="logoDe" />
             </div>
             <div style={{ display: "inline-block" }}>
@@ -30,9 +30,9 @@ function Header(props) {
 
                     </li>
                 </ul>
-            </div> */}
+            </div>
 
-            <div className="App container py-3">
+            {/* <div className="App container py-3">
                 <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
                     <Navbar.Brand className="font-weight-bold text-muted">
                         <img src={logoDe} className="logoDe" alt="logoDe" />
@@ -60,7 +60,7 @@ function Header(props) {
                     </div>
                 </Navbar>
 
-            </div>
+            </div> */}
         </div>
     );
 }

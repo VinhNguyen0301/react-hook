@@ -8,7 +8,8 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import { LinkContainer } from "react-router-bootstrap";
-import Footer from '../Footer/Footer'
+import Footer from '../Footer/Footer';
+import Header from '../Header simple/header'
 const style = {
     position: 'absolute',
     top: '50%',
@@ -30,6 +31,7 @@ function CreateNewDoc(props) {
 
     return (
         <div>
+            <Header />
             <div className="headers">Create New Project</div>
             <div className="titles">Set up the name and document(s) needed for this project</div>
             <div className="textfield">

@@ -36,7 +36,8 @@ function Box(props) {
 export default function Dashboard() {
     return (
         <div>
-            {/* <Header /> */}
+            <Header />
+
             <div className="Dashboard">
                 <div className="flex-container">
                     <div className="item item1">
@@ -48,7 +49,7 @@ export default function Dashboard() {
                         <Button variant="outlined" className="btn-item">Use Template</Button>
                     </div>
                     <div className="item item2">
-                        <img src={cover} className="cover" alt="cover" />
+                        <img src={cover} className="cover" alt="cover" width="586px" height="322px" />
                     </div>
                 </div>
             </div>
@@ -126,6 +127,8 @@ export default function Dashboard() {
                     <div className="view-all-btn2">View All</div>
                 </div>
             </div>
+
+
             <Footer />
         </div>
 

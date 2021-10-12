@@ -3,7 +3,10 @@
     height: 80px;
     left: 0px;
     top: 0px;
- 
+ background: #FFFFFF;
+backdrop-filter: blur(4px);
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+border-radius: 12px;
 }
 
 .ul-header {
@@ -11,14 +14,24 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 56px;
 }
 
 .li-item {
   float: left;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+margin: 0px 20px;
+
 }
 
-.li-item p {
+/* .li-item p {
     display: block;
   padding: 8px;
   background-color: #dddddd;
-}
+} */

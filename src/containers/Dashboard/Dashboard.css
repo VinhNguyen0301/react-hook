@@ -4,6 +4,7 @@
     border-radius: 12px;
     height: 322px;
     width: 1152px;
+    margin-top: 40px;
 }
 .flex-container {
     display: flex;

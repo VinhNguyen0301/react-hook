@@ -9,7 +9,7 @@ import image from './image.png';
 function App() {
   return (
     <div className="App container py-3">
-      <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
+      {/* <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
         <Navbar.Brand className="font-weight-bold text-muted">
           <img src={image} className="App-logo" alt="logo" />
         </Navbar.Brand>
@@ -24,7 +24,7 @@ function App() {
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar> */}
       <Routes />
     </div>
   );

@@ -15,7 +15,7 @@ import NavProcess from '../NavProcess/NavProcess';
 
 function DocumentRecipient(props) {
     return (
-        <div>bbb</div>
+        <div className="document-recipient-box">bbb</div>
     )
 }
 
@@ -49,17 +49,35 @@ function DocumentItem(props) {
                 <Box className="box-ui">
                     <div style={{ display: 'flex' }}>
                         <div className="box-ui1" >
-                            <div>1. Add Process</div>
-                            <div> Document A.pdf</div>
-                            <div>Choose sharing option</div>
-                            <div></div>
-                            <div>
-                                Document Recipient(s)
+                            <div className="add-process-title">1. Add Process</div>
+                            <div className="process-doc-name">
+                                <div className="process-doc-name-d">Document A.pdf</div>
                             </div>
+                            <div className="choose-sharing">Choose sharing option</div>
+                            <div className="choose-checkbox" >
+                                aa
+                            </div>
+                            <div className="doc-reci-container">
+                                <div className="doc-reci">
+                                    Document Recipient(s)
+                            </div>
+                                <div className="add-sign-order">
+                                    Add Signing order
+                            </div>
+                            </div>
+
                             <DocumentRecipient />
-                            <div>+ Add Recipient</div>
-                            <div>
-                                2 btn
+                            <div className="add-recipient-btn">+ Add Recipient</div>
+                            <div style={{
+                                width: '680px',
+                                height: '96px',
+                                marginTop: '79px',
+                                borderTop: '1px solid #828282'
+                            }}>
+                                <div style={{ float: 'right', margin: '24px 56px 24px 0px' }}>
+                                    <Button variant="outlined" className="btn-back">Back</Button>
+                                    <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                                </div>
                             </div>
                         </div>
                         <div className="box-ui2" >

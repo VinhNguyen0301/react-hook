@@ -1,10 +1,57 @@
 .nav-process {
+    position: absolute;
     width: 240px;
-height: 820px;
-left: 0px;
-top: 80px;
+    height: 820px;
+/* left: 0px;
+top: 80px; */
 
 /* Gray 6 */
 
-background: #F2F2F2;
+    background: #F2F2F2;
+}
+.return-btn {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 133% */
+
+letter-spacing: -0.01em;
+
+/* Blue 2 */
+
+color: #082977;
+margin: 24px 58px 0px 24px;
+}
+.dedoco-sign-title{
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: -0.02em;
+
+/* Gray 1 */
+
+color: #3B3B3B;
+margin: 40px 22px 0px 24px;
+}
+.add-doc-step{
+    
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 16px;
+/* identical to box height, or 107% */
+
+letter-spacing: -0.01em;
+
+/* Blue 3 */
+
+margin: 15px 16px;
+
 }

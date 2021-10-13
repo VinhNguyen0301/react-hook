@@ -5,6 +5,7 @@ import Login from "./containers/Login/Login";
 import Dashboard from "./containers/Dashboard/Dashboard";
 import CreateNewDoc from "./containers/CreateDocument/CreateNewDoc";
 import DefineDoc from "./containers/DefineDocProcess/DefineDoc";
+import Confirmation from "./containers/ConfirmComponent/Confirmation"
 
 export default function Routes() {
     return (
@@ -23,6 +24,9 @@ export default function Routes() {
             </Route>
             <Route exact path="/define-process-doc">
                 <DefineDoc />
+            </Route>
+            <Route exact path="/confirmation">
+                <Confirmation />
             </Route>
         </Switch>
     );

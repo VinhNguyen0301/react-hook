@@ -13,6 +13,7 @@ import AddProcess from './AddProcess/AddProcess';
 import Header from '../Header simple/header';
 import NavProcess from '../NavProcess/NavProcess';
 
+
 function DocumentRecipient(props) {
     return (
         <div className="document-recipient-box">bbb</div>
@@ -76,7 +77,9 @@ function DocumentItem(props) {
                             }}>
                                 <div style={{ float: 'right', margin: '24px 56px 24px 0px' }}>
                                     <Button variant="outlined" className="btn-back">Back</Button>
-                                    <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                                    <LinkContainer to="/confirmation" style={{ marginLeft: '16px' }}>
+                                        <Button variant="outlined" className="btn-continue" >Continue</Button>
+                                    </LinkContainer>
                                 </div>
                             </div>
                         </div>

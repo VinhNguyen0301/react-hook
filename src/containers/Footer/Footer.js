@@ -7,7 +7,7 @@ function Footer() {
             <hr></hr>
             <ul className="trip-stats-list">
                 <li >
-                    <p className="font-footer" style={{ marginLeft: '384px' }}>Privacy Policy<span className="margin-span">|</span> </p>
+                    <p className="font-footer" style={{ marginLeft: '617px' }}>Privacy Policy<span className="margin-span">|</span> </p>
 
                 </li>
                 <li>

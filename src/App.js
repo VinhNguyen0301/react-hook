@@ -8,7 +8,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import image from './image.png';
 function App() {
   return (
-    <div className="App container py-3">
+    <div className="App ">
       {/* <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
         <Navbar.Brand className="font-weight-bold text-muted">
           <img src={image} className="App-logo" alt="logo" />

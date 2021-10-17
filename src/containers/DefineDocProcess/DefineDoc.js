@@ -12,11 +12,14 @@ import Footer from '../Footer/Footer';
 import AddProcess from './AddProcess/AddProcess';
 import Header from '../Header simple/header';
 import NavProcess from '../NavProcess/NavProcess';
-
+import fakeData from '../DefineDocProcess/fake-data.png';
+import rec from '../DefineDocProcess/Rectangle.png'
 
 function DocumentRecipient(props) {
     return (
-        <div className="document-recipient-box">bbb</div>
+        <div className="document-recipient-box">
+            <img src={fakeData} className="fake" alt="fake" />
+        </div>
     )
 }
 
@@ -56,13 +59,15 @@ function DocumentItem(props) {
                             </div>
                             <div className="choose-sharing">Choose sharing option</div>
                             <div className="choose-checkbox" >
-                                aa
+                                <div className="switch-btn-share">Dedoco Secure Share</div>
+                                <div className="switch-btn-cloud" style={{ marginLeft: '20px' }}>Manual</div>
                             </div>
                             <div className="doc-reci-container">
                                 <div className="doc-reci">
                                     Document Recipient(s)
                             </div>
                                 <div className="add-sign-order">
+                                    <span><img src={rec} className="rec" alt="rec" style={{ marginRight: '12px' }} /></span>
                                     Add Signing order
                             </div>
                             </div>

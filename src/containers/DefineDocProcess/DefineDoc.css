@@ -307,6 +307,14 @@ margin: 24px 0px 0px 40px;
   margin: 16px 0px 0px 40px;
   width: 356px;
   height: 48px;
+
+      display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2px 16px;
+
+position: absolute;
+
 }
 .doc-reci-container {
   display: flex;
@@ -360,4 +368,20 @@ margin-right: 40px;
 border: 1px solid #828282;
 box-sizing: border-box;
 border-radius: 4px;
+padding-top: 6px;
+padding-left: 16px;
+}
+.switch-btn-share {
+      display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+
+width: 210px;
+position: static;
+height: 40px;
+left: 16px;
+top: 4px;
+background: #3565E3;
+border-radius: 3px;
 }

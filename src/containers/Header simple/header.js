@@ -7,13 +7,14 @@ import { LinkContainer } from "react-router-bootstrap";
 import help from '../DefineDocProcess/help-circle.png'
 function Header(props) {
     return (
-        <div className="header-simple">
-            <div style={{ display: "flex", margin: '30px 0px 0px 36px' }}>
-                <div>
-                    <img src={image} className="image" alt="image" />
+        <div className="header-simple" >
+            <div style={{ display: "flex", margin: '0px 0px 0px 0px' }}>
+                <div style={{ width: '95%', margin: '20px 0px 0px 24px' }}>
+                    <img src={image} className="image" alt="image" width="40px" height="40px" />
                 </div>
-                <div>
-                    Help<span><img src={help} className="help" alt="help" /></span>
+                <div style={{ width: '5%', margin: '28px 80px 0px 0px' }}>
+                    <span><img src={help} className="" alt="help" style={{ marginRight: '10px' }} /></span>
+                     Help
                 </div>
             </div>
 

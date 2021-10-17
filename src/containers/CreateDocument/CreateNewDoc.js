@@ -74,8 +74,8 @@ function CreateNewDoc(props) {
                             </div>
                             <div style={{ margin: '463px 86px 24px 446px' }}>
                                 <Button variant="outlined" className="btn-back">Back</Button>
-                                <LinkContainer to="/define-process-doc" style={{ margin: "0px" }}>
-                                    <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
+                                <LinkContainer to="/define-process-doc" style={{ marginLeft: '16px' }}>
+                                    <Button variant="outlined" className="btn-continue" >Continue</Button>
                                 </LinkContainer>
 
                             </div>

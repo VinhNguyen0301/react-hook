@@ -112,7 +112,7 @@ function DefineDoc(props) {
             </div>
                         <DocumentItem name="Document A.pdf" />
                         <DocumentItem name="Document B.pdf" />
-                        <div style={{ margin: '20px 270px 0px', float: 'right' }}>
+                        <div style={{ margin: '20px 360px 0px', float: 'right' }}>
                             <Button variant="outlined" className="btn-back">Back</Button>
                             <Button variant="outlined" className="btn-continue" style={{ marginLeft: '16px' }}>Continue</Button>
                         </div>

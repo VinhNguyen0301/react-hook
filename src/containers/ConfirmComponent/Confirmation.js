@@ -11,7 +11,9 @@ function Confirmation(props) {
                 <div style={{ width: '240px' }}>
                     <NavProcess />
                 </div>
-                <div style={{ width: '1200px', height: '820px' }}></div>
+                <div style={{ width: '1200px', height: '820px' }}>
+                    <h1>Confirmation</h1>
+                </div>
             </div>
         </div>
     );

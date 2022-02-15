@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logoDe from './logoDe.png';
+import logoDe from '../../assets/logoDe.png';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";

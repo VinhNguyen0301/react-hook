@@ -11,7 +11,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Ellipse from './Ellipse.png';
+import Ellipse from '../../assets/Ellipse.png';
 import FacebookLogin from 'react-facebook-login';
 import { LinkContainer } from "react-router-bootstrap";
 

@@ -5,7 +5,7 @@ import "./App.css";
 import Routes from "./Routes";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
-import image from './image.png';
+import image from '../src/assets/image.png';
 function App() {
   return (
     <div className="App ">

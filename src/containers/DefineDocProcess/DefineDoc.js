@@ -1,19 +1,19 @@
 import React from 'react';
 import './DefineDoc.css';
-import group from './group178.png';
-import trash from './trash-2.png';
+import group from '../../assets/group178.png';
+import trash from '../../assets/trash-2.png';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { LinkContainer } from "react-router-bootstrap";
 import cancel from '../CreateDocument/x.png';
-import help from './help-circle.png';
+import help from '../DefineDocProcess/help-circle.png';
 import Modal from '@mui/material/Modal';
 import Footer from '../Footer/Footer';
 import AddProcess from './AddProcess/AddProcess';
 import Header from '../Header simple/header';
 import NavProcess from '../NavProcess/NavProcess';
-import fakeData from '../DefineDocProcess/fake-data.png';
-import rec from '../DefineDocProcess/Rectangle.png'
+import fakeData from '../../assets/fake-data.png';
+import rec from '../../assets/Rectangle.png'
 
 function DocumentRecipient(props) {
     return (

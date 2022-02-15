@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Frame from './Frame.png';
+import Frame from '../../assets/Frame.png';
 import Login from "../Login/Login";
 import Header from "../Header simple/header";
 

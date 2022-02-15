@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import image from '../../image.png';
+import image from '../../assets/image.png';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";

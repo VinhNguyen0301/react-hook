@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavProcess.css';
-import vector from './Vector.png';
-import check from './check-circle.png';
+import vector from '../../assets/Vector.png';
+import check from '../../assets/check-circle.png';
 
 function DocumentStepComponent(props) {
     return (

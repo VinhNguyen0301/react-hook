@@ -24,6 +24,6 @@ You will also see any lint errors in the console.
    #### 7. Confirmation Page (not really completed)
 ### II.Using Demo UI video to view and visit UI
 ### Thank you your visit !!!
-Confirmation Page UI page is not completed . But it will be finish completely in the nearly future commit. Thanks for your waiting and patience.
+Confirmation Page UI page is not completed . But it will be finish completely in the nearly future commit. Thanks for your waiting and patience..
 
 @VinhNguyen
